@@ -1,0 +1,11 @@
+:root {
+  --bg: #fdfaf0;
+  --bg-alt: #f7efd2;
+  --surface: #fffefa;
+  --ink: #1c1a14;
+  --muted: #6e6856;
+  --line: #e4dbb8;
+  --accent: #e8b923;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
