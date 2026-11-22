@@ -40,6 +40,14 @@ export default function Hero() {
               <a href={`mailto:${profile.email}`} className="link-line">
                 Email me
               </a>
+              <a
+                href={profile.linkedin}
+                className="link-line"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
               {profile.resume ? (
                 <a href={profile.resume} download className="link-line">
                   Download resume
