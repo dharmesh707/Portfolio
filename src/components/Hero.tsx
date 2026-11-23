@@ -7,7 +7,7 @@ export default function Hero() {
   const { scrollY } = useScroll();
   const photoY = useTransform(scrollY, [0, 700], [0, -60]);
   const textY = useTransform(scrollY, [0, 700], [0, 40]);
-  const fade = useTransform(scrollY, [0, 500], [1, 0.1]);
+  const fade = useTransform(scrollY, [200, 700], [1, 0.15]);
 
   const [first = "", last = ""] = profile.name.split(" ");
   const initials = `${first.charAt(0)}${last.charAt(0)}`;
@@ -40,17 +40,24 @@ export default function Hero() {
               <a href={`mailto:${profile.email}`} className="link-line">
                 Email me
               </a>
-              <a
-                href={profile.linkedin}
-                className="link-line"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
+              {profile.linkedin ? (
+                <a
+                  href={profile.linkedin}
+                  className="link-line"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              ) : null}
               {profile.resume ? (
-                <a href={profile.resume} download className="link-line">
-                  Download resume
+                <a
+                  href={profile.resume}
+                  className="link-line"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
                 </a>
               ) : null}
             </div>

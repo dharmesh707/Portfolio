@@ -8,8 +8,8 @@ export const profile = {
   linkedin: "",
   github: "",
   location: "Mumbai, India",
-  photo: "/images/profile.jpg",
-  resume: "/resume.pdf",
+  photo: "./images/profile.jpg",
+  resume: "./resume.pdf",
   education: [
     {
       school: "SIES Graduate School of Technology",

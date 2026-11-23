@@ -1,4 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
+import ScrollLine from "./components/ScrollLine";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -14,6 +15,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollLine />
       <motion.div className="progress" style={{ scaleX }} />
       <Navbar />
       <Hero />
