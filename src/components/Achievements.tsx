@@ -36,6 +36,21 @@ export default function Achievements() {
           {certifications.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.08}>
               <div className="cert">
+                {c.image ? (
+                  <a
+                    className="cert-image-link"
+                    href={c.link ?? undefined}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`View ${c.title} certificate`}
+                  >
+                    <img
+                      className="cert-image"
+                      src={c.image}
+                      alt={`${c.title} certificate`}
+                    />
+                  </a>
+                ) : null}
                 <p className="cert-meta">
                   {c.issuer}, {c.date}
                 </p>

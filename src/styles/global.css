@@ -459,6 +459,24 @@ section {
   transform: translateY(-4px);
   border-color: var(--accent);
 }
+.cert-image-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--bg-alt);
+}
+.cert-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.25s;
+}
+.cert-image-link:hover .cert-image {
+  transform: scale(1.02);
+}
 .cert-meta {
   color: var(--muted);
   font-size: 0.85rem;

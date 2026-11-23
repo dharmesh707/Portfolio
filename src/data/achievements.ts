@@ -25,27 +25,30 @@ export const hackathons: Hackathon[] = [
 
 export const certifications: Certification[] = [
   {
-    title: "Oracle Cloud AI Foundations Associate",
+    title: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
     issuer: "Oracle",
-    date: "Oct 2026",
+    date: "18 Oct 2026",
     detail:
       "AI and ML, generative AI, LLMs, RAG, AI agents, embeddings, vector search, OCI AI services, responsible AI.",
-    link: null,
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=01E5B07AD74E98B23E82FBFF59C9E8F2367DBB5DAA2D0CF49B81FEF396D19C76",
+    image: "./images/oracle-ai-foundations.png",
   },
   {
-    title: "AWS Cloud Foundations",
+    title: "AWS Academy Graduate - Cloud Foundations - Training Badge",
     issuer: "Amazon Web Services Training and Certification",
-    date: "Jan to Apr 2026",
+    date: "20 Apr 2026",
     detail:
       "Cloud fundamentals, EC2, S3, RDS, VPC, IAM, CloudWatch, Well-Architected Framework.",
-    link: null,
+    link: "https://www.credly.com/badges/5d3470d6-80ec-40e5-8efc-d06dad2cf669/print",
+    image: "./images/aws-cloud-foundations.png",
   },
   {
-    title: "AWS Machine Learning Foundations",
+    title: "AWS Academy Graduate - Machine Learning Foundations - Training Badge",
     issuer: "Amazon Web Services Training and Certification",
-    date: "Mar to Apr 2026",
+    date: "13 Apr 2026",
     detail:
       "ML pipeline, SageMaker, applied AI services for vision, NLP and forecasting.",
-    link: null,
+    link: "https://www.credly.com/badges/5d3470d6-80ec-40e5-8efc-d06dad2cf669/print",
+    image: "./images/aws-machine-learning-foundations.png",
   },
 ];

@@ -24,4 +24,5 @@ export type Certification = {
   date: string;
   detail: string;
   link: string | null;
+  image: string | null;
 };
